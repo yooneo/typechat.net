@@ -27,7 +27,7 @@ public class HealthDataAgent : ConsoleApp
         _agent.Translator.MaxRepairAttempts = 2;
 
         // Uncomment to observe prompts
-        //base.SubscribeAllEvents(_agent.Translator);
+        base.SubscribeAllEvents(_agent.Translator);
     }
 
     public TypeSchema Schema => _agent.Translator.Validator.Schema;
